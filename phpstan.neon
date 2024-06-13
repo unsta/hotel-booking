@@ -1,0 +1,14 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app/Http/Controllers
+        - app/Http/Services
+        - app/Http/Repositories
+        - app/Http/Requests
+        - app/Http/Exceptions
+
+    # Level 9 is the highest level
+    level: 8
