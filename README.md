@@ -4,17 +4,17 @@
 - Composer (https://getcomposer.org/)
 - Docker (https://www.docker.com/products/docker-desktop/)
 - Mailtrap registration (https://mailtrap.io/)
-  - Once registered you will need to copy the `mailtrap_username` and `mailtrap_password`:
+  - Once registered you will need to copy the Mailtrap `Username` and `Password`:
     - Form the sidebar navigate to Email Testing and click the Action settings button
     - A page with SMPT Integration will open
-    - Copy the `Username` and the `Password` and later paste them in the `.env` file
+    - Copy the `Username` and the `Password` and later replace them in the `.env` (`your_mailtrap_username` & `your_mailtrap_password`)
 - Postman (https://www.postman.com/downloads/)
 
 ## Project Set Up:
 
-### Clone the project from
+### Clone the project
 
-    https://github.com/unsta/hotel-booking
+    git clone git@github.com:unsta/hotel-booking-api.git
 
 ### Create an `.env` file from `.env.example`
 
