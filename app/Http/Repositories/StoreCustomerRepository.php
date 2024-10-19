@@ -9,10 +9,6 @@ use App\Models\Customer;
 
 class StoreCustomerRepository
 {
-    public function __construct()
-    {
-    }
-
     /** @param array<string> $data */
     public function createCustomer(array $data): Customer
     {

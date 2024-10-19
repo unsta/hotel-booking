@@ -10,10 +10,6 @@ use App\Models\Room;
 
 class ShowRoomRepository
 {
-    public function __construct()
-    {
-    }
-
     public function getRoom(int $roomId): ShowRoomResource
     {
         $room = Room::find($roomId);

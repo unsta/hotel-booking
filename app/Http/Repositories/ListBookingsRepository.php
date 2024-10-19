@@ -9,10 +9,6 @@ use App\Models\Booking;
 
 class ListBookingsRepository
 {
-    public function __construct()
-    {
-    }
-
     public function getBookings(): ListBookingsResource
     {
         return new ListBookingsResource(Booking::all());

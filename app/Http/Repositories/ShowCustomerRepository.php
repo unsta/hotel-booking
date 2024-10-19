@@ -10,10 +10,6 @@ use App\Models\Customer;
 
 class ShowCustomerRepository
 {
-    public function __construct()
-    {
-    }
-
     public function getCustomer(int $customerId): ShowCustomerResource
     {
         $customer = Customer::find($customerId);

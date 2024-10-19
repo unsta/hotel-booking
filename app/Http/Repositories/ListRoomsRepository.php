@@ -9,10 +9,6 @@ use App\Models\Room;
 
 class ListRoomsRepository
 {
-    public function __construct()
-    {
-    }
-
     public function getRooms(): ListRoomsResource
     {
         return new ListRoomsResource(Room::all());

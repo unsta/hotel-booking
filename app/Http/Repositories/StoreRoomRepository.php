@@ -9,10 +9,6 @@ use App\Models\Room;
 
 class StoreRoomRepository
 {
-    public function __construct()
-    {
-    }
-
     /** @param array<string, int|string> $data */
     public function createRoom(array $data): Room
     {

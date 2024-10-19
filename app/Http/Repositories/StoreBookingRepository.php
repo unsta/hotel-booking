@@ -6,17 +6,12 @@ namespace App\Http\Repositories;
 
 use App\Events\BookingCreated;
 use App\Http\Exceptions\QueryException;
-use App\Models\Booking;
-use App\Models\Room;
+use App\Models\{Booking, Room};
 use Carbon\CarbonImmutable;
 use Illuminate\Database\Eloquent\Builder;
 
 class StoreBookingRepository
 {
-    public function __construct()
-    {
-    }
-
     public function checkRoomAvailability(
         int $roomId,
         CarbonImmutable $checkInDate,
