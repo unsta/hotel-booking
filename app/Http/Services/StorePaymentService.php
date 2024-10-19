@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace App\Http\Services;
 
 use App\Enums\PaymentStatus;
+use App\Http\Interfaces\StorePaymentServiceInterface;
 use App\Http\Repositories\StorePaymentRepository;
 use App\Models\Payment;
 use Carbon\CarbonImmutable;
 use Money\Money;
 
-readonly class StorePaymentService
+readonly class StorePaymentService implements StorePaymentServiceInterface
 {
     public function __construct(public StorePaymentRepository $repository)
     {

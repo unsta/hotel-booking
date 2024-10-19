@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace App\Http\Repositories;
 
 use App\Http\Exceptions\LoginException;
+use App\Http\Interfaces\LoginRepositoryInterface;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-class LoginRepository
+class LoginRepository implements LoginRepositoryInterface
 {
     public function getUser(string $email, string $password): User
     {

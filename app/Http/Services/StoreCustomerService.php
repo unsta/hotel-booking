@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace App\Http\Services;
 
+use App\Http\Interfaces\StoreCustomerServiceInterface;
 use App\Http\Repositories\StoreCustomerRepository;
 use App\Models\Customer;
 
-readonly class StoreCustomerService
+readonly class StoreCustomerService implements StoreCustomerServiceInterface
 {
     public function __construct(public StoreCustomerRepository $repository)
     {

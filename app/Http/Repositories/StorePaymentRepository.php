@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace App\Http\Repositories;
 
 use App\Http\Exceptions\QueryException;
+use App\Http\Interfaces\StorePaymentRepositoryInterface;
 use App\Models\{Booking, Payment};
 
-class StorePaymentRepository
+class StorePaymentRepository implements StorePaymentRepositoryInterface
 {
     public function getBooking(int $bookingId): Booking
     {

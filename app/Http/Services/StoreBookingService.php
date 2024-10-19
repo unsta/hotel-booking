@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace App\Http\Services;
 
 use App\Http\Exceptions\RoomAvailabilityException;
+use App\Http\Interfaces\StoreBookingServiceInterface;
 use App\Http\Repositories\StoreBookingRepository;
 use App\Models\Booking;
 use Carbon\CarbonImmutable;
 use Money\Money;
 
-readonly class StoreBookingService
+readonly class StoreBookingService implements StoreBookingServiceInterface
 {
     public function __construct(public StoreBookingRepository $repository)
     {

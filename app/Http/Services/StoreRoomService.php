@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace App\Http\Services;
 
+use App\Http\Interfaces\StoreRoomServiceInterface;
 use App\Http\Repositories\StoreRoomRepository;
 use App\Models\Room;
 
-readonly class StoreRoomService
+readonly class StoreRoomService implements StoreRoomServiceInterface
 {
     public function __construct(public StoreRoomRepository $repository)
     {

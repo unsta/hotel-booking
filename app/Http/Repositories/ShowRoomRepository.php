@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace App\Http\Repositories;
 
 use App\Http\Exceptions\EntityNotFoundException;
+use App\Http\Interfaces\ShowRoomRepositoryInterface;
 use App\Http\Resources\ShowRoomResource;
 use App\Models\Room;
 
-class ShowRoomRepository
+class ShowRoomRepository implements ShowRoomRepositoryInterface
 {
     public function getRoom(int $roomId): ShowRoomResource
     {

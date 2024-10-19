@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace App\Http\Repositories;
 
 use App\Http\Exceptions\QueryException;
+use App\Http\Interfaces\StoreRoomRepositoryInterface;
 use App\Models\Room;
 
-class StoreRoomRepository
+class StoreRoomRepository implements StoreRoomRepositoryInterface
 {
     /** @param array<string, int|string> $data */
     public function createRoom(array $data): Room
